@@ -16,10 +16,10 @@ if uploaded_file is not None:
 else:
     df = pd.read_csv("biscayne_bay_dataset_oct_2021-1.csv")
 
-scatterPlot, linePlot, maps, threeDPlot, tables = st.tabs([
-    "Correlation",
+maps, linePlot, scatterPlot, threeDPlot, tables = st.tabs([
+    "Interactive Map",
     "Line Chart",
-    "Map",
+    "Correlation",
     "3D Chart",
     "Tables"
 ])
