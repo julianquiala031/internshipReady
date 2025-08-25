@@ -51,8 +51,8 @@ with maps:
                              lat="latitude",
                              lon="longitude",
                              mapbox_style="open-street-map",
-                             zoom=12,
-                             hover_data=["ODO (mg/L)","pH"])
+                             zoom=17,
+                             hover_data=df)
     st.plotly_chart(fig3)
 
 with threeDPlot:
