@@ -21,15 +21,3 @@ load_dotenv()
 # NASA's API url
 url = "https://api.nasa.gov/planetary/apod?api_key="
 
-api_key = os.getenv("NASA_KEY")
-
-final_url = url + api_key
-
-response = requests.get(final_url).json()
-
-print(type(response))
-print(response.keys())
-print(response["title"])
-print(response["date"])
-print(response["explanation"])
-
